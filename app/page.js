@@ -1,10 +1,13 @@
 import Hero from "./components/HomeComponents/Hero";
+import Introduction from "./components/About";
+import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    <div className="p-4 bg-gray-200">
+    <div className="md:p-3 bg-gray-100">
       <Hero />
-      <Hero />
+      <Introduction />
+      <Projects />
     </div>
   );
 }

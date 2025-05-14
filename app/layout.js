@@ -1,5 +1,18 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Montserrat } from "next/font/google";
+import { Poppins } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["800"],
+});
+
+const poppins = Poppins({
+  weight: ["500"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
