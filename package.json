@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "framer-motion": "^12.11.0",
-    "motion": "^12.10.5",
+    "framer-motion": "^12.11.1",
+    "motion": "^12.11.2",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

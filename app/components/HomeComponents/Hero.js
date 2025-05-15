@@ -56,13 +56,13 @@ export default function Hero() {
                     exit={{ opacity: 0 }}
                   >
                     <motion.div
-                      className="bg-stone-900 p-6 rounded-xl w-full max-w-2xl shadow-lg relative"
+                      className="bg-stone-900 p-6 rounded-xl max-w-sm md:max-w-2xl shadow-lg absolute right-10 md:right-160"
                       initial={{ scale: 0.9, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       exit={{ scale: 0.9, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <span className="text-stone-200 border-b-4 border-teal-500 montserrat-unique-class text-2xl font-semibold">
+                      <span className="text-stone-200 border-b-4 border-teal-500 montserrat-unique-class text-lg md:text-2xl font-semibold">
                         Niranjan Muniraj Ram
                       </span>
                       <span
@@ -71,7 +71,7 @@ export default function Hero() {
                       >
                         <AiFillCloseCircle />
                       </span>
-                      <div className="mt-8 text-lg poppins-medium text-stone-300">
+                      <div className="mt-8 text-md md:text-lg poppins-medium text-stone-300">
                         — I&apos;m a{" "}
                         <span className="text-teal-500 font-bold px-1">Software Developer</span>{" "}
                         working in a product-based company in Mumbai. I&apos;ve gained experience
@@ -103,20 +103,20 @@ export default function Hero() {
               </AnimatePresence>
             </div>
             <div className="hidden md:block w-1/5"></div>
-            <div className="absolute z-10 left-0 top-0 p-2 text-teal-50 italic text-3xl bg-teal-500 montserrat-unique-class">
+            <div className="fixed z-30 left-0 top-0 p-2 text-teal-50 italic text-3xl bg-teal-500 montserrat-unique-class">
               NR
             </div>
 
             {!sidebar && (
               <FaBarsStaggered
-                className="text-3xl text-stone-700 absolute z-20 top-4 right-4"
+                className="text-3xl text-stone-700 fixed z-20 top-3 right-10 md:right-3"
                 onClick={handleSidebar}
               />
             )}
             {sidebar && (
-              <div className="w-full md:w-1/5 h-full absolute z-20 top-0 md:static flex flex-col justify-center md:items-start text-center md:text-left mt-6 md:mt-0 bg-gray-200">
+              <div className="w-full md:w-1/5 h-full fixed z-20 top-0 right-0 flex flex-col justify-center md:items-start text-center md:text-left mt-0 bg-gray-100 border border-stone-200">
                 <AiFillCloseCircle
-                  className="text-5xl text-stone-600 absolute z-20 top-70 md:top-113 right-48 md:right-88"
+                  className="text-5xl text-stone-600 absolute z-20 top-70 md:top-113 right-52 md:right-88"
                   onClick={handleSidebar}
                 />
                 <div className="flex flex-row">
@@ -124,8 +124,8 @@ export default function Hero() {
                   <div className="w-full md:w-1/2 text-lg font-medium text-stone-800">
                     <div>HOME</div>
                     <div>INTRODUCTION</div>
-                    <div>SKILLS</div>
                     <div>PROJECTS</div>
+                    <div>SKILLS</div>
                     <div>CONTACT</div>
                     <div className="flex flex-row gap-2 mt-8 justify-center text-teal-600">
                       <FaLinkedinIn />
