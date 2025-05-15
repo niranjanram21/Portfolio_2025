@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { useState } from "react";
@@ -116,7 +117,7 @@ export default function Hero() {
             {sidebar && (
               <div className="w-full md:w-1/5 h-full fixed z-20 top-0 right-0 flex flex-col justify-center md:items-start text-center md:text-left mt-0 bg-gray-100 border border-stone-200">
                 <AiFillCloseCircle
-                  className="text-5xl text-stone-600 absolute z-20 top-70 md:top-113 right-52 md:right-88"
+                  className="text-5xl text-stone-600 absolute z-20 top-60 md:top-113 right-43 md:right-88"
                   onClick={handleSidebar}
                 />
                 <div className="flex flex-row">
@@ -128,13 +129,21 @@ export default function Hero() {
                     <div>SKILLS</div>
                     <div>CONTACT</div>
                     <div className="flex flex-row gap-2 mt-8 justify-center text-teal-600">
-                      <FaLinkedinIn />
-                      <FaGithub />
-                      <FaInstagram />
-                      <FaLinkedinIn />
+                      <a href="https://www.linkedin.com/in/niranjan-ram-873036224/">
+                        <FaLinkedinIn />
+                      </a>
+                      <a href="https://github.com/niranjanram21/">
+                        <FaGithub />
+                      </a>
+                      <a>
+                        <FaInstagram />
+                      </a>
+                      <a href="">
+                        <FaFacebookF />
+                      </a>
                     </div>
                     <div className="text-md text-sm mt-2 text-stone-600">
-                      niranjanram3657@gmail.com
+                      <a href="mailto:niranjanram3657@gmail.com">niranjanram3657@gmail.com</a>
                     </div>
                   </div>
                 </div>

@@ -80,7 +80,7 @@ export default function Projects() {
             <motion.div
               key={index}
               className="mt-12"
-              initial={{ opacity: 0, y: p.y, x: p.x }}
+              initial={{ opacity: 0, y: p.y, x: 0 }}
               whileInView={{ opacity: 1, y: 0, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.2 }}

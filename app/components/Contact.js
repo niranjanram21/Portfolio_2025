@@ -84,9 +84,9 @@ export default function Contact() {
           </motion.div>
 
           <motion.div
-            className="md:w-1/2 py-4 md:py-0 bg-teal-500 px-12 text-stone-100 rounded-lg shadow-xl/30 flex flex-col items-start justify-center gap-3 text-center"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="md:w-1/2 py-4 md:py-0 bg-teal-500 px-12 text-stone-100 rounded-lg shadow-xl/30 flex flex-col items-start justify-center gap-3 md:text-center"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
           >
