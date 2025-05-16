@@ -18,6 +18,7 @@ import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Hero() {
   const [sidebar, setSidebar] = useState(false);
@@ -41,12 +42,20 @@ export default function Hero() {
                 </span>
               </div>
               <ContainerTextFlip className="mx-4" />
-              <button
-                onClick={() => setShowModal(true)}
-                className="text-white poppins-medium mt-4 bg-teal-500 hover:bg-teal-700 focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5"
-              >
-                About Me
-              </button>
+              <div className="flex gap-2 mt-8">
+                <a
+                  href="/Resume.pdf"
+                  className="text-white bg-stone-500 hover:bg-stone-700 cursor-pointer focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 shadow-xl/30"
+                >
+                  Download Resume
+                </a>
+                <button
+                  onClick={() => setShowModal(true)}
+                  className="text-white bg-teal-500 hover:bg-teal-700 cursor-pointer focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 shadow-xl/30"
+                >
+                  About Me
+                </button>
+              </div>
 
               <AnimatePresence>
                 {showModal && (
@@ -57,7 +66,7 @@ export default function Hero() {
                     exit={{ opacity: 0 }}
                   >
                     <motion.div
-                      className="bg-stone-900 p-6 rounded-xl max-w-sm md:max-w-2xl shadow-lg absolute right-10 md:right-160"
+                      className="bg-stone-900 p-6 rounded-xl max-w-sm md:max-w-2xl shadow-lg absolute right-6 md:right-160"
                       initial={{ scale: 0.9, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       exit={{ scale: 0.9, opacity: 0 }}
@@ -104,30 +113,77 @@ export default function Hero() {
               </AnimatePresence>
             </div>
             <div className="hidden md:block w-1/5"></div>
-            <div className="fixed z-30 left-0 top-0 p-2 text-teal-50 italic text-3xl bg-teal-500 montserrat-unique-class">
+            <div className="fixed z-30 left-0 top-0 p-3 text-teal-50 italic text-3xl bg-teal-500 montserrat-unique-class">
               NR
             </div>
 
             {!sidebar && (
               <FaBarsStaggered
-                className="text-3xl text-stone-700 fixed z-20 top-3 right-10 md:right-3"
+                className="text-3xl text-stone-700 fixed z-20 top-3 right-3 md:right-3"
                 onClick={handleSidebar}
               />
             )}
             {sidebar && (
               <div className="w-full md:w-1/5 h-full fixed z-20 top-0 right-0 flex flex-col justify-center md:items-start text-center md:text-left mt-0 bg-gray-100 border border-stone-200">
                 <AiFillCloseCircle
-                  className="text-5xl text-stone-600 absolute z-20 top-60 md:top-113 right-43 md:right-88"
+                  className="text-5xl text-stone-600 absolute z-20 top-60 md:top-113 right-48 md:right-88"
                   onClick={handleSidebar}
                 />
                 <div className="flex flex-row">
                   <div className="w-1/2 hidden md:block"></div>
                   <div className="w-full md:w-1/2 text-lg font-medium text-stone-800">
-                    <div>HOME</div>
-                    <div>INTRODUCTION</div>
-                    <div>PROJECTS</div>
-                    <div>SKILLS</div>
-                    <div>CONTACT</div>
+                    <div className="flex flex-col">
+                      <ScrollLink
+                        to="hero"
+                        smooth={true}
+                        duration={1000}
+                        className="cursor-pointer"
+                        spy={true}
+                        activeClass="text-teal-500"
+                      >
+                        HOME
+                      </ScrollLink>
+                      <ScrollLink
+                        to="intro"
+                        smooth={true}
+                        duration={1000}
+                        className="cursor-pointer"
+                        spy={true}
+                        activeClass="text-teal-500"
+                      >
+                        INTRODUCTION
+                      </ScrollLink>
+                      <ScrollLink
+                        to="projects"
+                        smooth={true}
+                        duration={1000}
+                        className="cursor-pointer"
+                        spy={true}
+                        activeClass="text-teal-500"
+                      >
+                        PROJECTS
+                      </ScrollLink>
+                      <ScrollLink
+                        to="skills"
+                        smooth={true}
+                        duration={1000}
+                        className="cursor-pointer"
+                        spy={true}
+                        activeClass="text-teal-500"
+                      >
+                        SKILLS
+                      </ScrollLink>
+                      <ScrollLink
+                        to="contact"
+                        smooth={true}
+                        duration={1000}
+                        className="cursor-pointer"
+                        spy={true}
+                        activeClass="text-teal-500"
+                      >
+                        CONTACT
+                      </ScrollLink>
+                    </div>
                     <div className="flex flex-row gap-2 mt-8 justify-center text-teal-600">
                       <a href="https://www.linkedin.com/in/niranjan-ram-873036224/">
                         <FaLinkedinIn />

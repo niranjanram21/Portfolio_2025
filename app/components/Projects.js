@@ -34,6 +34,7 @@ export default function Projects() {
         "CSS3",
         "JavaScript",
         "React",
+        "Node.js",
         "Mongodb",
         "Tailwind",
         "Custom CSS",
@@ -54,6 +55,8 @@ export default function Projects() {
         "CSS3",
         "JavaScript",
         "React",
+        "Node.js",
+        "Redux Toolkit",
         "Mongodb",
         "Tailwind",
         "Custom CSS",
@@ -72,9 +75,9 @@ export default function Projects() {
   return (
     <>
       <div className="mx-auto md:w-1/2 px-4 md:px-0 mt-16">
-        <h2 className="montserrat-unique-class text-xl text-stone-800 border-b-4 border-teal-500 inline-block">
+        <span className="montserrat-unique-class text-xl text-stone-800 text-left border-b-4 border-teal-500">
           PROJECTS
-        </h2>
+        </span>
         {projects.map((p, index) => {
           return (
             <motion.div

@@ -1,39 +1,62 @@
+"use client";
+import { Link as ScrollLink } from "react-scroll";
+
 export default function Footer() {
   return (
     <div className="bg-white mt-16 pt-4 sm:pt-10 lg:pt-12">
       <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="flex flex-col items-center pt-6">
           <nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+            <ScrollLink
+              to="hero"
+              smooth={true}
+              duration={1000}
+              className="cursor-pointer"
+              spy={true}
+              activeClass="text-teal-500"
             >
-              About
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+              HOME
+            </ScrollLink>
+            <ScrollLink
+              to="intro"
+              smooth={true}
+              duration={1000}
+              className="cursor-pointer"
+              spy={true}
+              activeClass="text-teal-500"
             >
-              Investor Relations
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+              INTRODUCTION
+            </ScrollLink>
+            <ScrollLink
+              to="projects"
+              smooth={true}
+              duration={1000}
+              className="cursor-pointer"
+              spy={true}
+              activeClass="text-teal-500"
             >
-              Jobs
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+              PROJECTS
+            </ScrollLink>
+            <ScrollLink
+              to="skills"
+              smooth={true}
+              duration={1000}
+              className="cursor-pointer"
+              spy={true}
+              activeClass="text-teal-500"
             >
-              Press
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+              SKILLS
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={1000}
+              className="cursor-pointer"
+              spy={true}
+              activeClass="text-teal-500"
             >
-              Blog
-            </a>
+              CONTACT
+            </ScrollLink>
           </nav>
           <div className="flex gap-4">
             <a
@@ -106,9 +129,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="py-8 text-center text-sm text-gray-400">
-          © 2021 - Present Flowrift. All rights reserved.
-        </div>
+        <div className="py-8 text-center text-sm text-gray-400">© 2025 - by Niranjan Ram.</div>
       </footer>
     </div>
   );
