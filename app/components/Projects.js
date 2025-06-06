@@ -65,7 +65,7 @@ export default function Projects() {
       description:
         "An search application for movies and Tv shows fetched from TMDB API. Login and Signup functionality is implemented using Firebase. Movies/Tv shows can also searched and filtered.",
       image: "/images/cinesearch.png",
-      link: "https://cinesearchapp.netlify.app/",
+      link: "https://cinesearchapp1.netlify.app/",
       github: "https://github.com/niranjanram21/MovieAPIMERN",
       x: -50,
       y: 50,
