@@ -49,6 +49,28 @@ export default function Projects() {
       y: 50,
     },
     {
+      name: "YumEase",
+      tech: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Redux Toolkit",
+        "Mongodb",
+        "Tailwind",
+        "Custom CSS",
+        "Express",
+      ],
+      description:
+        "An E-commerce app based on React JS, where you can find a list of food items categorized based on different types of menu. An admin panel is used to add or delete products in the cart.",
+      image: "/images/Yumease.png",
+      link: "https://yumease.netlify.app/",
+      github: "https://github.com/niranjanram21/FoodApp",
+      x: -50,
+      y: 50,
+    },
+    {
       name: "CineSearch",
       tech: [
         "HTML5",
