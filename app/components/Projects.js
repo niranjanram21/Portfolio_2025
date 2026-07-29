@@ -136,13 +136,13 @@ export default function Projects() {
                       ))}
                     </div>
                     <div className="flex flex-row gap-4">
-                      <a href={p.link} className="mt-4">
+                      <a href={p.link} className="mt-4" target="_blank" rel="noopener noreferrer">
                         <button className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white poppins-medium focus:ring-4 focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 shadow-xl/20">
                           View Demo
                           <FaExternalLinkAlt className="text-sm" />
                         </button>
                       </a>
-                      <a href={p.github} className="mt-4">
+                      <a href={p.github} className="mt-4" target="_blank" rel="noopener noreferrer">
                         <button className="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-700 text-white poppins-medium focus:ring-4 focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 shadow-xl/20">
                           Github
                           <FaExternalLinkAlt className="text-sm" />

@@ -83,19 +83,25 @@ export default function Hero() {
                       </span>
                       <div className="mt-8 text-md md:text-lg poppins-medium text-stone-300">
                         — I&apos;m a{" "}
-                        <span className="text-teal-500 font-bold px-1">Software Developer</span>{" "}
-                        working in a product-based company in Mumbai. I&apos;ve gained experience
-                        developing applications using{" "}
-                        <span className="text-teal-500 font-bold  px-1">
-                          .NET, MySQL, and AngularJS
+                        <span className="text-teal-500 font-bold px-1">Frontend Developer</span>{" "}
+                        based in Mumbai with{" "}
+                        <span className="text-teal-500 font-bold px-1">
+                          2 years of professional experience
+                        </span>{" "}
+                        building web applications. I specialize in{" "}
+                        <span className="text-teal-500 font-bold px-1">
+                          React, Next.js, JavaScript, HTML, and CSS
                         </span>
-                        . Over the past year, I&apos;ve also worked on modern web development,
-                        building responsive and dynamic applications using{" "}
-                        <span className="text-teal-500 font-bold  px-1">React, Next.js</span> and{" "}
-                        <span className="text-teal-500 font-bold  px-1">MERN stack</span>. I enjoy
-                        creating clean, user-centric interfaces and integrating real-world APIs.
-                        I&apos;m actively seeking opportunities/collaborations where I can grow as a
-                        React developer and contribute to meaningful, design-focused projects.
+                        , creating responsive, interactive, and user-focused interfaces. I also have
+                        experience working with{" "}
+                        <span className="text-teal-500 font-bold px-1">
+                          ASP.NET, VB.NET, AngularJS, and REST APIs
+                        </span>
+                        , developing scalable B2B applications in the travel domain. I&apos;m
+                        passionate about building modern web experiences with clean code, smooth
+                        animations, and performance-focused design using{" "}
+                        <span className="text-teal-500 font-bold px-1">Framer Motion</span> and{" "}
+                        <span className="text-teal-500 font-bold px-1">Three.js</span>.
                       </div>
                       <div className="flex flex-row gap-6 mt-8 text-stone-400">
                         <IoLogoJavascript className="text-5xl" />
@@ -223,8 +229,17 @@ export default function Hero() {
           100% {
             transform: translateY(-30px);
             transform-origin: 50% 50%;
-            text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc,
-              0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 50px 80px rgba(0, 0, 0, 0.3);
+            text-shadow:
+              0 1px 0 #ccc,
+              0 2px 0 #ccc,
+              0 3px 0 #ccc,
+              0 4px 0 #ccc,
+              0 5px 0 #ccc,
+              0 6px 0 #ccc,
+              0 7px 0 #ccc,
+              0 8px 0 #ccc,
+              0 9px 0 #ccc,
+              0 50px 80px rgba(0, 0, 0, 0.3);
           }
         }
       `}</style>
